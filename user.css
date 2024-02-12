@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+    padding: 0px 20px;
+    color: #fff;
+}
+
+
+.header-section{
+    position: fixed;
+    width: 100%;
+    /* min-height: 100Vh; */
+    overflow-x: hidden;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    padding: 0px 20px;
+
+}
+
+.menu-bar{
+    display: flex;
+    margin-right: 40px;
+}
+
+.menu-icon{
+    display: none;
+    font-size: 35px;
+}
+
+.header-section .nav-bar{
+    display: flex;
+}
+
+.header-section .logo{
+   padding: 8px 15px;
+}
+
+.nav-bar a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+li{
+    list-style: none;
+    padding: 8px 15px;
+}
+
+ul i{
+    font-size: 25px;
+    padding: 10px 8px;
+}
+
+.nav-bar ul{
+    display: flex;
+    padding: 0px 10px;
+   /* margin-left: 20px; */
+}
+
+.nav-bar ul img{
+    margin: 4px 4px;
+
+}
+
+.menu-img{
+    /* margin-right: 6px; */
+    margin-top: 10px;
+}
+
+.nav-bar .menu-arrow{
+    margin-top: 10px;
+}
+
+
+
+/* ========== Hero styling ========== */
+
+.hero-section{
+    background-image: url(bk-ground-img.png);
+    background-size: 130%;
+    background-repeat: no-repeat;
+
+}
+
+.MovieName{
+    width: 300px;
+    margin-top: 200px;
+    margin-bottom: 30px;
+    /* margin-left: 100px;   */
+   
+}
+
+.main-carousel{
+    padding-bottom: 20px;
+   
+}
+
+.main-carousel img{
+    padding: 8px;
+   
+}
+
+
+ .hero-section h4{
+    padding: 10px 5px;
+    display: inline-block;
+   font-size: 20px;
+
+}
+
+.hero-section p{
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+ .hero-section-1 h4{
+   padding: 20px 10px;
+   font-size: 20px;
+
+}
+
+.hero-section-1 p{
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+button{
+    padding: 4px 12px;
+    font-size: 14px;
+    font-weight: 800;
+    background: transparent ;
+    border: 1px solid #fff;
+    color: #fff;
+    margin-top: 5px;
+    
+}
+
+.play-btn{
+    background-color: #fff;
+    color: black;
+}
+
+button i{
+    padding-top: 8px;
+    padding: 7px;
+    font-size: 18px;
+}
+
+
+
+/* ========== Footer styling ========= */
+
+footer{
+    margin-top: 30px;
+}
+
+footer h5{
+    color: #757575;
+    font-size: 25px;
+    padding-top: 20px;
+}
+.footer-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.footer-section .set a{
+    font-size: 17px;
+ color: #757575;
+ text-decoration: none;
+
+}
+
+.footer-section .set div{
+   padding-bottom: 20px;
+}
+
+
+footer button{
+    padding: 10px 14px;
+    outline-style: none;
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    margin-right: 4px;
+}
+
+select option{
+    color: black;
+}
+
+footer i{
+    font-size: 35px;
+    padding: 8px;
+}
+
+
+@media (max-width: 768px){
+
+    .main-carousel img{
+width: 160px;
+/* height: 30vh; */
+    }
+
+    
+    .nav-bar{
+        position: fixed;
+        top: 12%;
+        left: -100%;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: #242222;
+    
+        color: #fff;
+        height: 50vh;
+        max-width: 20rem;
+        border-radius: 8px;
+        z-index: 100;
+        transition: all 300ms ease-in-out;
+    }
+
+    .menu-bar{
+        flex-direction: column;
+        color: #757575;
+    }
+
+    .nav-bar.open {
+        left: 0;
+        width: 100%;
+    }
+
+    .menu-icon{
+        display: block;
+    }
+
+    
+
+
+    .footer-section{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    footer i{
+        padding: 0;
+    }
+
+    footer h5{
+        font-size: 15px;
+    }
+
+    .footer-section div{
+        padding: 0;
+        margin: 0;
+        
+    }
+
+    .footer-section .set a{
+        font-size: 18px;
+    }
+}
